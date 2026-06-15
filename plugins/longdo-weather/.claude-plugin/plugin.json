@@ -2,7 +2,7 @@
   "name": "longdo-weather",
   "description": "Use the Longdo Weather API — rain radar, current conditions, wind, and forecasts.",
   "version": "0.1.0",
-  "author": { "name": "Longdo", "email": "pattara@longdo.com" },
+  "author": { "name": "Longdo", "email": "support@mm.co.th" },
   "homepage": "https://weather.longdo.com/docs",
   "license": "Apache-2.0"
 }

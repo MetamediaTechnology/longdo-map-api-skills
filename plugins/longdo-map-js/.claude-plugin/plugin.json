@@ -2,7 +2,7 @@
   "name": "longdo-map-js",
   "description": "Tips, patterns, and gotchas for building web maps with the Longdo Map v3 JavaScript API.",
   "version": "1.0.0",
-  "author": { "name": "Longdo", "email": "pattara@longdo.com" },
+  "author": { "name": "Longdo", "email": "support@mm.co.th" },
   "homepage": "https://map.longdo.com/docs/javascript/",
   "license": "Apache-2.0"
 }
