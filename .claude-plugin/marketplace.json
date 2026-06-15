@@ -1,0 +1,38 @@
+{
+  "name": "longdo",
+  "description": "Agent skills for building with Longdo — maps (JavaScript & Flutter), the location REST APIs, and weather.",
+  "owner": {
+    "name": "Longdo",
+    "email": "pattara@longdo.com"
+  },
+  "plugins": [
+    {
+      "name": "longdo-map-js",
+      "source": "./plugins/longdo-map-js",
+      "description": "Build web maps with the Longdo Map v3 JavaScript API — markers, clustering, popups, UI, layers, geolocation. For web frontend developers.",
+      "keywords": ["longdo", "map", "javascript", "web", "gis"],
+      "category": "web"
+    },
+    {
+      "name": "longdo-map-rest",
+      "source": "./plugins/longdo-map-rest",
+      "description": "Call the Longdo location REST APIs from any language — search/suggest, geocode, reverse-geocode, routing, traffic. For backends and any non-JS client.",
+      "keywords": ["longdo", "rest", "geocode", "routing", "search", "traffic"],
+      "category": "backend"
+    },
+    {
+      "name": "longdo-map-flutter",
+      "source": "./plugins/longdo-map-flutter",
+      "description": "Build mobile maps with the official longdo_maps_api3_flutter SDK — LongdoMapWidget, events, markers, routing. For Flutter/mobile developers.",
+      "keywords": ["longdo", "map", "flutter", "mobile", "android", "ios"],
+      "category": "mobile"
+    },
+    {
+      "name": "longdo-weather",
+      "source": "./plugins/longdo-weather",
+      "description": "Use the Longdo Weather API — rain radar, current conditions, wind, and forecasts. For any language / backend.",
+      "keywords": ["longdo", "weather", "rain", "radar", "forecast"],
+      "category": "backend"
+    }
+  ]
+}

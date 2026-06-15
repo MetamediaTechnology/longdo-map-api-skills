@@ -1,21 +1,24 @@
 ---
-name: longdo-map-api
+name: longdo-map-js
 description: >-
   Tips, patterns, and gotchas for building web maps with the Longdo Map v3
   JavaScript API — initialisation, HTML markers that don't drift on zoom,
   directional markers, clustering, click handling, popups, UI components, layer
-  control, geolocation, place tags, and the Longdo REST APIs (search, geocode,
-  routing, traffic). Use when writing or debugging code that uses Longdo Map.
+  control, geolocation, and place tags. Use when writing or debugging
+  browser/web code that uses the Longdo Map JavaScript API. For the location
+  REST APIs (search, geocode, routing, traffic) see the longdo-map-rest skill.
 ---
 
 # Longdo Map v3 JavaScript API — Tips & Tricks
 
 Official docs: https://map.longdo.com/docs/javascript/
-REST API docs: https://map.longdo.com/docs/rest
 Get a free API key: https://map.longdo.com/console/
 
 These are battle-tested patterns and non-obvious gotchas. Prefer them over
 naive approaches — several work around real quirks in the v3 renderer.
+
+> Need server-side search, geocoding, routing, or traffic data? Those are REST
+> calls — see the **longdo-map-rest** skill. This skill is the browser map only.
 
 ---
 
@@ -294,25 +297,10 @@ var bluemarble = new longdo.Layer('bluemarble_terrain', { source: { min: 1, max:
 
 ---
 
-## REST APIs (server-side / fetch)
-
-Call these from your backend (keep keys server-side) or via `fetch`. Full
-reference: https://map.longdo.com/docs/rest
-
-- **Search / suggest** — POI and address search (powers the search box).
-- **Geocode / reverse geocode** — address ⇄ coordinates.
-- **Traffic speed** — `GetTrafficSpeed`.
-- **Calculate route (GeoJSON)** — `GetCalculateRouteInGeoJSON`.
-- **Route matrix** — `GetCalculateRouteMatrix` (many-to-many travel times).
-
-A ready-made search box example is at https://mapdemo.longdo.com/searchbox/.
-
----
-
 ## Reference
 
 - JavaScript API docs: https://map.longdo.com/docs/javascript/
-- REST API docs: https://map.longdo.com/docs/rest
 - Live examples: https://mapdemo.longdo.com/
 - Official tips blog: https://map-blog.longdo.com/longdo-map-api-tips/
 - API console (get a key): https://map.longdo.com/console/
+- Server-side search / geocode / routing / traffic → **longdo-map-rest** skill

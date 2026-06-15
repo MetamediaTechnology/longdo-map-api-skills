@@ -1,0 +1,8 @@
+{
+  "name": "longdo-map-rest",
+  "description": "Call the Longdo location REST APIs from any language — search, geocode, routing, traffic.",
+  "version": "1.0.0",
+  "author": { "name": "Longdo", "email": "pattara@longdo.com" },
+  "homepage": "https://map.longdo.com/docs/rest",
+  "license": "Apache-2.0"
+}
