@@ -304,3 +304,4 @@ var bluemarble = new longdo.Layer('bluemarble_terrain', { source: { min: 1, max:
 - Official tips blog: https://map-blog.longdo.com/longdo-map-api-tips/
 - API console (get a key): https://map.longdo.com/console/
 - Server-side search / geocode / routing / traffic → **longdo-map-rest** skill
+- Quick example: https://mapdemo.longdo.com/index-simple.php
