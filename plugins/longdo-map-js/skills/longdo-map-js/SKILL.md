@@ -17,6 +17,12 @@ Get a free API key: https://map.longdo.com/console/
 These are battle-tested patterns and non-obvious gotchas. Prefer them over
 naive approaches — several work around real quirks in the v3 renderer.
 
+> The Longdo Map v3 JavaScript API is built on top of **MapLibre GL JS**. The
+> underlying MapLibre map instance is exposed as `map.Renderer`, so you can call
+> any MapLibre method directly on it (e.g. `map.Renderer.getStyle()`,
+> `map.Renderer.setLayoutProperty(...)`, `map.Renderer.on(...)`) when the Longdo
+> wrapper doesn't cover what you need.
+
 > Need server-side search, geocoding, routing, or traffic data? Those are REST
 > calls — see the **longdo-map-rest** skill. This skill is the browser map only.
 
